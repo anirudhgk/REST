@@ -47,3 +47,7 @@ app.get('/agents', function (req, res) {
         })
         .catch(err => console.error('error with the db query', err.stack));
 });
+
+app.listen(port, () => {
+    console.log(`Server listening at http://YOUR_PORT_NUMBER:${port}`)
+});
